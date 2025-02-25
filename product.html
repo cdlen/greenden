@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden - Products</title>
+    <style>
+        body {
+            background-color: #d4f8d4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .grid-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.2em;
+        }
+        .grid-item p {
+            margin: 0 0 15px;
+            font-size: 1em;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);  
+            }
+
+            .plant-item {
+                width: 100%;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden - Products</title>
+    <style>
+        
+        .search-bar {
+            margin:0 auto;
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar input[type="search"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px 0 0 8px;
+        }
+        .search-bar button[type="submit"] {
+            width: 20%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search-bar input[type="search"]{
+        
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Greenden</h1>
+        <div class="menu">
+            <a style="text-decoration: none; color: black;" href="index.html">Home</a>
+            <a style="text-decoration: none; color: black;" href="product.html">Products</a>
+            <a style="text-decoration: none; color: black;" href="contact.html">Contact</a>
+        </div>
+    </div>
+     
+    <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Search plants...">
+        <button type="submit" id="search-button">Search</button>
+    </div>
+    
+    <div class="grid-container">
+        
+    </div>
+</body>
+</html>
+    
+    <div class="grid-container" id="grid-container">
+        <div class="grid-item" id="plant-1">
+            <img src="A Bunch of Peach Colored Roses That Are in a Vase Free Stock Photo by Everypixel.jpg" alt="Plant 1">
+            <h3>Plant 1</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="grid-item" id="plant-2">
+            <img src="Pink Carnation in a Waffle Cone Free Stock Photo by Everypixel.jpg" alt="Plant 2">
+            <h3>Plant 2</h3>
+            <p>$39.99</p>
+        </div>
+        <div class="grid-item" id="plant-3">
+            <img src="pot-1467659_1920.jpg" alt="Plant 3">
+            <h3>Plant 3</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="grid-item" id="plant-4">
+            <img src="flower-1319011_1280.jpg" alt="Plant 4">
+            <h3>Plant 4</h3>
+            <p>$14.99</p>
+        </div>
+        <div class="grid-item" id="plant-5">
+            <img src="A Person Watering a Plant with a Watering Can on a Shelf Free Stock Photo by Everypixel.jpg" alt="Plant 5">
+            <h3>Plant 5</h3>
+            <p>$24.99</p>
+        </div>
+        <div class="grid-item" id="plant-6">
+            <img src="violet-2566139_1280.jpg" alt="Plant 6">
+            <h3>Plant 6</h3>
+            <p>$34.99</p>
+        </div>
+        <div class="grid-item" id="plant-7">
+            <img src="A Potted Plant Sitting on a Table Next to a Plastic Container Free Stock Photo by Everypixel.jpg" alt="Plant 7">
+            <h3>Plant 7</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="grid-item" id="plant-8">
+            <img src="A Potted Plant Sitting on a Table Next to a Plastic Container Free Stock Photo by Everypixel.jpg" alt="Plant 8">
+            <h3>Plant 8</h3>
+            <p>$29.99</p>
+        </div>
+    </div>
+    <script>
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+    const gridContainer = document.getElementById('grid-container');
+    
+     
+    searchButton.addEventListener('click', () => {
+        
+        const searchQuery = searchInput.value.toLowerCase();
+    
+        
+        const gridItems = gridContainer.children;
+    
+        
+        for (const gridItem of gridItems) {
+             
+            const textContent = gridItem.textContent.toLowerCase();
+    
+             
+            if (textContent.includes(searchQuery)) {
+               
+                gridItem.style.display = 'block';
+            } else {
+                
+                gridItem.style.display = 'none';
+            }
+        }
+    });</script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden - Home</title>
+    <style>
+       .header {
+        max-width: 100%; /* Set header max-width to full viewport width */
+        background-color: #d4f8d4; /* Set header background color to dark gray */
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto; /* Center the header horizontally */
+    }
+        body {
+            background-color:#d4f8d4 ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+.grid-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    margin: 0 0 15px;
+    font-size: 1em;
+    color: #333;
+}
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .main-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px 0;
+        }
+        .main-section img {
+            max-width: 100%;
+            height: auto;
+            width:500px;
+        }
+        .main-text {
+            max-width: 500px;
+            text-align: left;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 25px;
+        }
+        .shop-btn {
+            background-color: black;
+            color: white;
+        }
+        .watch-btn {
+            background-color: white;
+            border: 1px solid black;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .about-title {
+            margin-bottom: 10px;
+        }
+        .about-description {
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .feature-box {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .feature-box img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                width: 80%;
+            }
+            
+        }
+        .reviews {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rating {
+  color: #ff9900;
+  font-weight: bold;
+}
+.newsletter-signup {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-signup p {
+  margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-signup input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-signup button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #3e8e41;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Greenden</h1>
+        <div class="menu">
+            <a style="text-decoration: none; color: black;" href="index.html">Home</a>
+            <a style="text-decoration: none; color: black;" href="product.html">Products</a>
+            <a style="text-decoration: none; color: black;" href="contact.html">Contact</a>
+        </div>
+    </div>
+  
+    
+    <div class="main-section">
+        <div class="main-text">
+            <h2>Plants for your Interior</h2>
+            <p>We offer you a wide range of Artificial and Natural Flowers</p>
+            <div class="buttons">
+                <button class="shop-btn">Shop Now</button>
+                <button class="watch-btn">Watch Video</button>
+            </div>
+            <p>160+ Plant Species | 100+ Clients</p>
+        </div>
+        <img src="A Potted Plant Sitting on a Table Next to a Plastic Container Free Stock Photo by Everypixel.jpg" alt="Plant Image">
+    </div>
+    
+    <div class="about-container">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-description">This site for those who admire the beauty and harmony of nature</p>
+        <div class="features">
+            <div class="feature-box">
+                <img src="clipboard.svg" alt="Icon">
+                <h3>Large Assortment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae voluptas assumenda maiores aspernatur est.</p>
+            </div>
+            <div class="feature-box">
+                <img src="fast-forward.svg" alt="Icon">
+                <h3>Free and Fast Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil numquam in aliquid unde repellendus.</p>
+            </div>
+            <div class="feature-box">
+                <img src="phone-incoming.svg" alt="Icon">
+                <h3>24/7 Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo commodi ex perferendis ducimus.</p>
+            </div>
+        </div>
+    </div>
+    <h1 style="font-size: 48px; font-weight: bold; text-align: center; color: #2e8b57; margin: 20px 0;">
+        Best Seller
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="A Bunch of Peach Colored Roses That Are in a Vase Free Stock Photo by Everypixel.jpg" alt="Plant 1">
+            <h3>Plant 1</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="grid-item">
+            <img src="Pink Carnation in a Waffle Cone Free Stock Photo by Everypixel.jpg" alt="Plant 2">
+            <h3>Plant 2</h3>
+            <p>$39.99</p>
+        </div>
+        <div class="grid-item">
+            <img src="pot-1467659_1920.jpg" alt="Plant 3">
+            <h3>Plant 3</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="grid-item">
+            <img src="flower-1319011_1280.jpg" alt="Plant 4">
+            <h3>Plant 4</h3>
+            <p>$14.99</p>
+        </div>
+        <div class="grid-item">
+            <img src="A Person Watering a Plant with a Watering Can on a Shelf Free Stock Photo by Everypixel.jpg" alt="Plant 5">
+            <h3>Plant 5</h3>
+            <p>$24.99</p>
+        </div>
+        <div class="grid-item">
+            <img src="violet-2566139_1280.jpg" alt="Plant 6">
+            <h3>Plant 6</h3>
+            <p>$34.99</p>
+        </div>
+    </div>
+    <div class="reviews">
+        <h1>Customer Reviews</h1>
+        <div class="review">
+         
+          <p>Rating: <span class="rating">4.5/5</span></p>
+          <p>"Great product! Highly recommend."</p>
+          <p>- John D.</p>
+        </div>
+        <div class="review">
+         
+          <p>Rating: <span class="rating">4.2/5</span></p>
+          <p>"Good product, but could be improved."</p>
+          <p>- Jane S.</p>
+        </div>
+        <div class="review">
+         
+          <p>Rating: <span class="rating">4.8/5</span></p>
+          <p>"Excellent product! Highly recommend."</p>
+          <p>- Bob S.</p>
+        </div>
+        <!-- Add more reviews here -->
+      </div>
+      <div class="newsletter-signup">
+        <h2>Stay up to date with our latest news and offers</h2>
+        <p>Sign up for our newsletter to receive exclusive updates and promotions.</p>
+        <form>
+          <input type="email" placeholder="Enter your email address">
+          <button>Sign up</button>
+        </form>
+      </div>
+</body>
+</html>
